@@ -43,19 +43,19 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="cerrar()">Cerrar</button>
-                    <button type="button" class="btn btn-primary" onclick="guardar()">Guardar</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="cerrarEd()">Cerrar</button>
+                    <button type="button" class="btn btn-primary" onclick="guardarEd()">Guardar</button>
                 </div>
             </div>
         </div>
     </div>
     
     <script>        
-        function cerrar(){
+        function cerrarEd(){
             $('#modalEditar').modal('hide');
         }
 
-        function guardar(){
+        function guardarEd(){
             route = "{{route('libros.update', ':id')}}";
             route = (route.replace(':id', $('#id').val()));
         $.ajax({

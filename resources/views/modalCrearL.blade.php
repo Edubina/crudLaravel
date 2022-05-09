@@ -50,6 +50,7 @@
 <script>
     function cerrar(){
         $('#modalCrearL').modal('hide');
+        
     }
     function guardar(){
         route = "{{route('libros.store')}}";
