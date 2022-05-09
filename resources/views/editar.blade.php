@@ -70,7 +70,6 @@
                 precio: $('#precioE').val(),
             },
             success: function(data){
-                console.log(data)
                 reload();
             }
         });

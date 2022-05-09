@@ -88,7 +88,6 @@
             $('#modalCrearL').modal('show');
         }
         function modalEditar(id,nombre,resumen,noPaginas,edicion,autor,precio) {
-            console.log(id,nombre,resumen,noPaginas,edicion,autor,precio);
             $('#id').val(id);
             $('#nombreE').val(nombre);
             $('#resumenE').val(resumen);

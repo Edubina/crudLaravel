@@ -66,7 +66,6 @@
                 precio: $('#precio').val(),
             },
             success: function(data){
-                console.log(data)
                 reload();
             }
         });
